@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="logo\ChatGPT Image 14_24_58 6 thg 7, 2025.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+      body{
+        font-family: Arial, sans-serif;
+        background-color:#ffffff ;
+        background-image: url(logo\ChatGPT Image 14_24_58 6 thg 7, 2025.png);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+      line-height: 1.6;
+      }
+      @media (max-width: 768px) {
+  .product-box {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+      
+      
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:#A5D6A7;
+            padding: 10px 20px;
+            color: white;
+            
+        }
+        #logo{
+            border-radius: 50%;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+
+        }
+        #timkiem {
+            flex-grow: 1;
+            margin-left: 20px;
+            padding: 5px; 
+            width: 200px; 
+            border-radius: 5px; 
+      
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        /* menu */
+
+        .menu-toggle {
+     position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 26px;
+  z-index: 1000;
+  cursor: pointer;
+        }
+        h2{
+            padding-top: 80px;
+            margin: 20px;
+        }
+        .menu{
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f8f9fa;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+        }
+        .menu-header {
+            color:#333;
+            font-size: 20px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        span{
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        .menu-item:hover {
+            background-color: #a6c6e5;
+                color: red;
+        }
+
+        #menu-toggle:checked + .menu-toggle + .menu {
+        transform: translateX(0);
+    }
+    </style>
+
+
+</head>
+<body>
+    <div class="header">
+        <div id="logo">
+            <img src="logo\ChatGPT Image 14_24_58 6 thg 7, 2025.png" alt="Logo" width="40" height="40">
+        </div>
+        <div id="timkiem">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div id="login">
+            <a href="dangnhap.html">Chưa có tài khoản ?</a>
+        </div>
+
+    </div>
+
+      <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-toggle">
+            <i class="fas fa-bars" style="color: black; padding-top: 50px;"></i>
+        </label>
+        <div class="menu">
+            <div class="menu-header">
+                <h2 style="color: black;" >Menu</h2>
+            </div>
+            <div class="item">
+            <div class="menu-item">
+                <i class="fas fa-home" style="color: black;"></i>
+                <a href="trangchu.html"><span style="color: black;">Home</span></a>
+            </div>
+              <div class="menu-item">
+           <i class="fas fa-shopping-cart" style="color: black;"></i>
+              <a href="giohang.html"> <span style="color: black;">Giỏ Hàng</span></a> 
+            </div>
+              <div class="menu-item">
+            <i class="fas fa-user" style="color: black;"></i>
+               <a href=""> <span style="color: black;">Account</span></a>
+            </div>
+              <div class="menu-item">
+              <i class="fas fa-question-circle" style="color: black;"></i>
+                  <a href="trogiup.html"><span style="color: black;">Help</span></a>
+            </div>
+        </div>
+    </div>
+     
+     <style>
+    
+        
+        h3{
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+            font-size: 24px;
+           
+        }
+        .product-list{
+         display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 50px auto;
+  padding: 10px;
+  max-width: 1200px;
+            
+        }
+     
+        p{
+            padding-top: 10px;
+            padding-left: 50px;
+            text-align: center;
+            font-weight: bold;
+            align-items: center;
+            padding-right: 30%;
+        }
+
+      
+     
+        span{
+            margin-right: 20px;
+        }
+  
+        
+
+    .product-box{
+        width: 220px;
+  text-align: center;
+  margin-right: 20px;
+       
+
+    }
+    .product-box:hover{
+     border-radius: 10px;
+    border: 2px;
+    background-color: #bdc6d0;
+    
+ 
+    }
+
+
+
+     
+
+     
+     </style>
+    <h3>Danh Sách Sản Phẩm</h3>
+    <div class="product-list ">
+<div class="product-box">
+            <a href="email.html"><i class="fas fa-envelope" style="font-size: 80px; margin-right: 5%;"></i class="email"></a>
+                          <p>Email</p>
+            <div class="sp"><span>Gmail, yahoo mail,hot mail và nhiều hơn thế nữa</span></div>
+            </div>
+<div class="product-box">   
+    <a href="Tool.html"><i class="fas fa-cogs" style="font-size: 80px; margin-right: 5%;" ></i class="tool"></a>
+                   <p>Tool</p>
+            <div class="sp"><span>Cung cấp các tool như spam sms ,locket,...</span></div>
+          </div>
+ <div class="product-box">
+        <a href="account.html"><i class="fas fa-user-gear" style="font-size: 76px; margin-right: 5%"></i class="taikhoan"></a>
+           <p>Tài Khoản</p>
+        <div class="sp"><spanp>Fb, BM, key window, kaspersky....</spanp></div> 
+         </div>
+<div class="product-box">
+           <a href="spkhac.html"><i class="fas fa-box" style="font-size: 80px; margin-right: 5%"></i class="khac"></a>
+                      <p>Khác</p>
+         <div class="sp"><span>Các sản phẩm số khác...</span></div> 
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <style>
+        h1{
+            text-align: center;
+
+        }
+
+        .trichdan-container {
+      width: 100%;
+      background-color: #e8f5e9;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      border-top: 2px solid #4caf50;
+      border-bottom: 2px solid #4caf50;
+      padding: 10px 0;
+    }
+
+    .trichdan-chay {
+   
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #e30000;
+    }
+
+  
+    </style>
+
+    <h1>Thông Báo chính</h1>
+     <div class="trichdan-container">
+    <div class="trichdan-chay">
+      “Khó không nản học càng lâu chúng ta càng đau đầu” <br>
+      quan trọng hơn nữa đó là ANTI ĐOM ĐÓM
+    </div>
+  </div>
+</body>
+</html>

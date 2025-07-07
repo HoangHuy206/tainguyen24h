@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="icon" href="logo/ChatGPT Image 14_24_58 6 thg 7, 2025.png" type="image/x-icon">
+</head>
+<body>
+     <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      margin: 0;
+    }
+
+    .main-title {
+      font-size: 32px;
+      text-align: center;
+      color: #fefefe;
+      margin: 30px 0 10px;
+      text-shadow: 0 0 10px #ffffff33;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 100px); /* trừ đi chiều cao tiêu đề để form vào giữa */
+    }
+
+    .login-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 8px;
+      padding-right: 35px;
+      box-sizing: border-box;
+    }
+
+    .password-wrapper {
+      position: relative;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 8px;
+      border: none;
+      background-color: #5c5470;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #7c6d98;
+    }
+    h5{
+      text-align: center;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <div class="container">
+    <div class="login-form">
+      <h2>Đăng Nhập</h2>
+      <form>
+        <div class="input-group">
+          <label for="username">Tên Đăng Nhập</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Mật khẩu</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" name="password" required>
+            <span class="toggle-password" onclick="togglePassword()">👁️</span>
+          </div>
+        </div>
+
+        <button type="submit"><a href="trangchu.html">Đăng Nhập</a></button>
+        <h5>Hoặc</h5>
+        <button type="submit"><a href="dangky.html">Đăng Ký</a></button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById('password');
+      const icon = document.querySelector('.toggle-password');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        icon.textContent = '🙈';
+      } else {
+        passwordInput.type = 'password';
+        icon.textContent = '👁️';
+      }
+    }
+  </script>
+
+</body>
+</html>
